@@ -74,7 +74,7 @@ public protocol SnapshotOptionsProtocol: NSObjectProtocol {
  
  The snapshot image can be used in an image view (`UIImage` on iOS and tvOS, `NSImage` on macOS, `WKImage` on watchOS). The image does not respond to user gestures. To add interactivity, use the [Mapbox Maps SDK for iOS](https://www.mapbox.com/ios-sdk/) or the [Mapbox Maps SDK for macOS](https://github.com/mapbox/mapbox-gl-native/tree/master/platform/macos/), which can optionally display raster tiles. If you are already using the map SDKs for iOS or macOS, use the `MGLMapSnapshotter` object instead of this class to take advantage of caching and offline packs.
  */
-@objc(MBSnapshot)
+@objc(MBXSnapshot)
 open class Snapshot: NSObject {
     #if os(OSX)
     public typealias Image = NSImage
